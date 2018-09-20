@@ -1,0 +1,62 @@
+#mainHeader{
+	background-color: blue;
+	color: skyblue;
+	width:30em;
+	text-align: center;
+	padding: 10px;
+	border: solid red 5px;
+	font-family: 'Gloria Hallelujah', cursive;
+	display: inline;
+	margin-top: 0;
+
+}
+#mainHeader:hover{
+	background-color: purple;
+	width: 30px;
+	padding: 10px;
+	border:  solid 5px #556B2F;
+	cursor: pointer;
+
+}
+#paragraph{
+	margin-top: 0;
+	background-color: #DEB887;
+	color: 	#DC143C;
+	text-decoration-style: solid;
+	margin-top:0;
+	width: 620px;
+	height: 120px;
+	font-family: 'Gloria Hallelujah', cursive;
+	border-style: dotted;
+}
+#paragraph:hover{
+	background-color: red;
+	color: #00CED1;
+}
+#image{
+	margin-top:0;
+	width: 620px;
+	height: 100px;
+
+	
+	
+	display: block;
+}
+table{
+	  margin-right: 0px;
+      border:solid 1px black;
+      width:50px;
+      height:auto;
+      border-radius: 25;
+     }
+  th{
+   background-color: blue;
+     }
+  td{
+	border:solid 1px black;
+}
+#time{
+	margin-right: : 0px
+	border-radius: 50px;
+}
+
