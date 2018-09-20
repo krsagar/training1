@@ -1,0 +1,17 @@
+.datePeven{
+	background-color: cyan;
+	margin:0;
+	color:#777;
+}
+.datePodd{
+	background-color: tomato;
+	margin:0;
+	color:#999;
+}
+#message{
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	border: solid 10px red;
+	border-radius: 10px;
+}
