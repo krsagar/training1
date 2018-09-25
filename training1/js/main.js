@@ -112,7 +112,7 @@ if(conditionsMet==3){
 	alert("good");
 }
 else{
-	console.log("please enter a valid password");
+	alert("please enter a valid password");
 }
 }
 
@@ -141,5 +141,127 @@ function checkmail(string){
        	alert("good");
        else
        	alert("please enter a valid email");
+	}
+
+
+
+
+
+	var str="sagar,kumar,gupta";
+	var middleName=str.slice(6,11);
+	document.createElement("name").innerHTML=middleName;
+	console.log(middleName);
+
+	function myfunction(){
+		var str=document.createElement("name1").innerHTML;
+		var txt=str.replace("sagar","kumar");
+		document.createElement("name1").innerHTML=txt;
 
 	}
+
+
+
+	function indexAt(str,char){
+		for(i=0;i<str.length;i++){
+			if(str.charAt(i)==char){
+				console.log(i);
+			    break;
+			}  
+		}
+
+	}
+	indexAt("dogogogogogogog","g");
+
+
+	function includeschar(str,char){
+		for(i=0;i<str.length;i++){
+			if(str.charAt(i)==char){
+				return true;
+			}
+		}
+              return false;
+	} 
+	console.log(includeschar("fish","g"));
+
+
+	function sliceString(str,start,stop){
+		var word="";
+		for(i=start;i<=stop;i++){
+			word+=str[i];
+
+		}
+		console.log(word);
+	}
+	sliceString("apple",1,3);
+
+	function replace(str,index, newlet){
+		var string1=str.slice(0,index);
+		var string2=str.slice(index+1);
+	    console.log(string1+newlet+string2);
+	
+	}
+	replace("butter",1,"e");
+
+function modString(val){
+		if(typeof val !="string"){
+		   console.log("please use a string");
+		    return;
+	    }
+		this.val=val
+		this.modSlice=function(start,stop){
+		    var newVal="";
+		     for(var i=start;i<stop;i++){
+		         newVal+=this.val[i];
+	            }
+	     this.val=newVal;
+	    },
+	    this.lastIndex= function(char){
+	    	for(var i=this.val.length;i>=0;i--){
+	    		if(this.val.charAt(i)==char){
+	    			console.log(i);
+	    			break;
+	    		}
+	    	}
+	    },
+	    this.countlength=function(){
+	    	var count=0;
+	    	while(this.val[count] != undefined){
+	    		count++;
+	    	}
+	    	console.log(count);
+	    }
+    }
+		var mystring=new modString("this is my string");
+	mystring.lastIndex("m")
+	    var babyCat=new modString("kittenkitten");
+	    babyCat.countlength();
+	
+$("#cat")
+document.getElementById("cat")
+
+$(".dogs")
+document.getElementsByClassName("dogs")
+
+$("h1")
+document.getElementsByTagName("h1")
+
+$("#myButton").click(function(){
+	$("#myH1").toggle(5000);
+});
+
+
+
+
+
+$(document).ready(function(){
+	$("#hidden").hover(function(){
+		$(this).css("color", "black");
+	},
+	function(){
+		$(this).hide(3000).show(3000).hide(3000).show(3000).hide(3000).show(3000);
+		//$(this).css("display", "none");
+	});
+	$("#button2").click(function(){
+		alert("I am alerting you");
+	});
+});
